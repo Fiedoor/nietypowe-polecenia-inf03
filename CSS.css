@@ -1,0 +1,61 @@
+/* Odwołanie do wszytkich znaczników na stronie */
+* {
+    /* Kod */
+}
+
+/* Odwołanie tylko do markera listy (np. kropka w liscie nieuporządkowanej lub numer w uporządkowanej)*/
+li::marker {
+    /* Kod */
+}
+
+/* Odwołanie tylko do obiektu wewnątrz innego obiektu */
+#prawy img {
+    /* Kod zostanie zastosowany dla znaczników img w obiekcie o ID 'prawy' */
+}
+
+/* Odwołanie do kilku elementów na raz */
+a,
+img {
+    /* Kod zostanie zastosowany do obu znaczników nieważne gdzie się znajdują */
+}
+
+/* Odwołanie do konkretnego typu inputa */
+input[type="text"] {
+    /* Kod wykonany tylko dla inputa o typie text */
+}
+
+/* Jeśli kod ma zostać wykonany po najechaniu kursorem */
+img:hover {
+    /* Kod wykonany po najechaniu na obiekt kursorem */
+}
+
+/* Likwidowanie podwójnego bordera na tabeli */
+table,
+td {
+    border-collapse: collapse;
+}
+
+/* Margines zewnętrzny */
+a {
+    margin: 2px;
+}
+
+/* Margines wewnętrzny */
+a {
+    padding: 2px;
+}
+
+/* Łatwe ustawienie obiektów na stronie obok siebie */
+/* Załóżmy taki kod:
+    <main>
+        <div>Zawartość</div>
+        <div>Zawartość</div>
+    </main>
+Jeśli chcemy ustawić te dwa divy koło siebie to:
+*/
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Jeśli elementy nie mieszczą się w mainie i muszą zajmować więcej niż jeden rząd*/
+}
