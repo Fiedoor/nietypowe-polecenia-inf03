@@ -22,5 +22,5 @@ if (isset($_GET['nazwa'])) {
     //kod wykonywany gdy pole nazwa w formularzu zostało wypełnione
 }
 
-//
+//Ciastka (pliki cookies)
 ?>
