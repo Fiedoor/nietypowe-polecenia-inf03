@@ -23,4 +23,5 @@ if (isset($_GET['nazwa'])) {
 }
 
 //Ciastka (pliki cookies)
+setcookie('ciastko', 1, time() + 600); //Ustawia plik cookie o nazwie ciastko z wartością 1 i czasem trwania 600 milisekund (1 minuta)
 ?>
