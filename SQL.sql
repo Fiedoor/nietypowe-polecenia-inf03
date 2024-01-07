@@ -8,3 +8,6 @@ GRANT ALL PRIVILEGES ON nazwa_bazy TO 'nazwa_użytkownika'@'localhost';
 ALTER TABLE nazwa_tabeli ADD nazwa_kolumny TYP_KOLUMNY --(TEXT, INT, DATE itp.)
 --liczenie ilośći rekordów z daną wartością
 SELECT nazwa_kolumny, COUNT(nazwa_liczonej_kolumny) GROUP BY nazwa_kolumny
+--Używanie LIKE
+SELECT nazwa_kolumny FROM nazwa_tabeli WHERE nazwa_kolumny LIKE 'a%' -- zwróci wartości zaczynające się na a
+SELECT nazwa_kolumny FROM nazwa_tabeli WHERE nazwa_kolumny LIKE '%a' -- zwróci wartości kończące się na a
