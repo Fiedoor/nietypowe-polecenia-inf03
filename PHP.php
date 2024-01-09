@@ -27,4 +27,7 @@ setcookie('ciastko', 1, time() + 600); //Ustawia plik cookie o nazwie ciastko z 
 
 //pobieranie nazw kolumn z tabeli w bazie
 mysqli_fetch_fields($zmienna_z_wynikiem_kwerendy);
+
+//odesłanie do innej strony
+header('Location:strona.html')
 ?>
