@@ -24,4 +24,7 @@ if (isset($_GET['nazwa'])) {
 
 //Ciastka (pliki cookies)
 setcookie('ciastko', 1, time() + 600); //Ustawia plik cookie o nazwie ciastko z wartością 1 i czasem trwania 600 milisekund (1 minuta)
+
+//pobieranie nazw kolumn z tabeli w bazie
+mysqli_fetch_fields($zmienna_z_wynikiem_kwerendy);
 ?>
