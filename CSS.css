@@ -59,3 +59,8 @@ main {
     flex-wrap: wrap;
     /* Jeśli elementy nie mieszczą się w mainie i muszą zajmować więcej niż jeden rząd*/
 }
+
+/* Dodanie tekstu przed paragrafem */
+p::before {
+    content: "TEKST";
+}
